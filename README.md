@@ -2,44 +2,142 @@
 
 ## Descrição
 
-![GitHub language count](https://img.shields.io/static/v1?label=C&message=framework&color=blue&style=for-the-badge&logo=C)
-![Status](https://img.shields.io/static/v1?label=STATUS&message=ANDAMENTO&color=GREEN&style=for-the-badge)
+![C](https://img.shields.io/static/v1?label=Linguagem&message=C&color=00599C&style=for-the-badge&logo=c)
+![Status](https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=green&style=for-the-badge)
+![License](https://img.shields.io/static/v1?label=LICENÇA&message=MIT&color=blueviolet&style=for-the-badge)
 
-> Resolução em C dos exercícios da Disciplina de Algoritmo e estrutura de Dados II
+> Resolução em **C** dos exercícios e listas da disciplina de **Algoritmos e Estrutura de Dados I**.  
+> Os programas cobrem desde fundamentos de ponteiros e alocação de memória até estruturas de dados clássicas como pilhas, filas e listas encadeadas.
 
 ### Conteúdo
 
 Arquivos com seus respectivos desafios:
 
-1. [Descrição](#descrição)
-2. [Conteúdo](#conteúdo)
-3. [Saiba que](#saiba-que)
-4. [Executando via Terminal](#exec-term)
-5. [Enunciados](#enunciados)
+1. [Sobre o Projeto](#-sobre-o-projeto)
+2. [Conteúdos Abordados](#-conteúdos-abordados)
+3. [Estrutura do Repositório](#-estrutura-do-repositório)
+4. [Saiba Antes de Executar](#-saiba-antes-de-executar)
+5. [Como Compilar e Executar](#-como-compilar-e-executar)
+6. [Enunciados](#enunciados)
   
-## Saiba que
-
-Como são resoluções para um curso de Lógica de Programação (nível inicante), não foram utilizadas as famosas boas práticas de programação, pois o objetivo é justamente ensinar os fundamentos de lógica, sem adicionar muita complexidade.
-
-## Executando via Terminal
-
-Para compilar um programa no LINUX você deve primeiramente abrir um janela de `console/terminal`. 
-
-Se você estiver trabalhando em "modo texto", você já está numa janela de console. Caso esteja em um ambiente gráfico, então deve ativar a janela de console clicando no ícone correspondente.
-
-A seguir, vá ao diretório onde você gravou o seu programa, usando o comando: `cd`.
-
-Supondo que o nome de seu programa seja `teste.c`, para compilá-lo digite:
-
+---
+ 
+## 🎯 Sobre o Projeto
+ 
+Este repositório reúne a resolução dos exercícios desenvolvidos ao longo da disciplina de **Algoritmos e Estrutura de Dados I**. O foco está nos fundamentos da programação em C, abordando desde manipulação de ponteiros e alocação de memória até estruturas de dados lineares e algoritmos de ordenação.
+ 
+> ⚠️ **Nota:** Como os exercícios fazem parte de um curso introdutório, algumas boas práticas avançadas de engenharia de software foram omitidas intencionalmente, priorizando a clareza dos conceitos fundamentais.
+ 
+---
+ 
+## 🧠 Conteúdos Abordados
+ 
+| Unidade | Tema |
+|---|---|
+| 🔵 Unidade 1 | Passagem de Parâmetros, Alocação de Memória e Ponteiros |
+| 🟢 Unidade 1 | Aritmética de Ponteiros, Vetores e Matrizes |
+| 🟡 Unidade 1 | Manipulação de Ponteiros (void, malloc, calloc) |
+| 🟠 Unidade 2 | Typedef, Struct, Union e Enumerador |
+| 🔴 Unidade 3 | Manipulação de Arquivos (texto e binário) |
+| 🟣 Unidade 4 | Pilha, Fila e Lista (estática e dinâmica) |
+| ⚫ Unidade 5 | Algoritmos de Ordenação |
+ 
+---
+## 📁 Estrutura do Repositório
+ 
 ```
- g++ -o teste teste.c
+ALG_ESTRUT_DADOS_I/
+│
+├── PONTEIROS/                              # Unidade 1 — Ponteiros, Vetores e Matrizes
+│   ├── UNID.01_ATV_00.c                    # Aposentadoria com ponteiros
+│   ├── UNID.01_ATV_01.c                    # Comparação de endereços de memória
+│   ├── UNID.01_ATV_02.c                    # CuiaBank — controle de saques
+│   ├── UNID.01_ATV_03.c                    # Reajuste salarial por departamento
+│   ├── UNID.01_ATV_04.c                    # Troca de vetores com aritmética de ponteiros
+│   ├── UNID.01_ATV_05.c                    # Vetor C com maior valor entre A e B
+│   ├── UNID.01_ATV_06.c                    # Vetor → Matriz de multiplicação
+│   ├── UNID.01_ATV_07.c                    # Produto das diagonais de matriz NxN
+│   └── UNID.01_ATV_08.c                    # Ponteiros genéricos (void**)
+│
+├── UNID. 1 - MEMÓRIA/                      # Alocação Dinâmica
+│   ├── UNID.01_ATV_10.c                    # Interruptor com ponteiros de função
+│   └── UNID.01_ATV_12.c                    # Vetor dinâmico com malloc/realloc
+│
+├── UNID. 2 - TIPOS ABSTRATOS DE DADOS/     # Struct, Union, Enum
+│   ├── UNID.02_ATV_01.c                    # Sistema de inventário de produtos
+│   ├── UNID.02_ATV_02.c                    # Gerenciamento de estacionamento
+│   ├── UNID.02_ATV_03.c                    # Sistema de funcionários e departamentos
+│   └── UNID.02_ATV_04.c                    # Sensores de automação residencial (union)
+│
+├── UNID. 3 - MANIPULAÇÃO DE ARQUIVOS/      # Leitura e escrita em arquivos
+│   ├── UNID.03_ATV_01.c                    # Memória de estado da lâmpada
+│   ├── UNID.03_ATV_02.c                    # Criptografia de mensagens em arquivo
+│   └── UNID.03_ATV_03.c                    # Concessionária — registros em arquivo
+│
+├── UNID.4 - PILHA, FILA E LISTA/           # Estruturas de dados lineares
+│   ├── UNID.04_ATV_v01.c                   # Garagem com pilha estática
+│   ├── UNID.04_ATV_02.c                    # Playlist com desfazer/refazer (pilha dinâmica)
+│   └── UNID.04_ATV_03.c                    # Fila de atendimento — clínica médica
+│
+└── UNID.5 - ALGORITMO DE ORDENAÇÃO/        # Algoritmos de ordenação
+    ├── UNID.05_ATV_01.c                    # Ordenação de strings
+    ├── UNID.05_ATV_02.c                    # Cadastro com ordenação múltipla
+    ├── UNID.05_ATV_03.c                    # Desempilhamento recursivo com soma
+    └── UNID.05_ATV_04.c                    # Quick Sort em ordem decrescente
 ```
+ 
+---
 
-Caso a compliação tenha sido executada com sucesso, você poderá executar seu programa, digitando:
-
+## ⚠️ Saiba Antes de Executar
+ 
+- Os programas são escritos em **C padrão (C99/C11)** e compilados com **GCC**
+- Cada arquivo `.c` é independente — compile e execute individualmente
+- Alguns exercícios utilizam **alocação dinâmica de memória** (`malloc`, `calloc`, `realloc`, `free`)
+- Exercícios marcados como `(POR FAZER)` ainda estão em desenvolvimento
+ 
+---
+ 
+## ▶️ Como Compilar e Executar
+ 
+### Pré-requisitos
+ 
+Certifique-se de ter o GCC instalado:
+ 
+```bash
+gcc --version
 ```
- ./teste
+ 
+### Clonando o repositório
+ 
+```bash
+git clone https://github.com/DebbieMatt/ALG_ESTRUT_DADOS_I.git
+cd ALG_ESTRUT_DADOS_I
 ```
+ 
+### Compilando um arquivo
+ 
+```bash
+# Sintaxe básica
+gcc -o saida nome_do_arquivo.c
+ 
+# Com flags recomendadas (exibe avisos e erros detalhados)
+gcc -Wall -Wextra -o saida nome_do_arquivo.c
+```
+ 
+### Executando
+ 
+```bash
+./saida
+```
+ 
+### Exemplo completo
+ 
+```bash
+gcc -o garagem "UNID.4 - PILHA, FILA E LISTA/UNID.04_ATV_v01.c"
+./garagem
+```
+ 
+---
 
 ## Enunciados
 
