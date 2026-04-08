@@ -19,6 +19,8 @@ Arquivos com seus respectivos desafios:
 4. [Saiba Antes de Executar](#-saiba-antes-de-executar)
 5. [Como Compilar e Executar](#-como-compilar-e-executar)
 6. [Enunciados](#enunciados)
+7. [Contribuindo](#-contribuindo)
+8. [Licença](#-licença)
   
 ---
  
@@ -27,8 +29,6 @@ Arquivos com seus respectivos desafios:
 Este repositório reúne a resolução dos exercícios desenvolvidos ao longo da disciplina de **Algoritmos e Estrutura de Dados I**. O foco está nos fundamentos da programação em C, abordando desde manipulação de ponteiros e alocação de memória até estruturas de dados lineares e algoritmos de ordenação.
  
 > ⚠️ **Nota:** Como os exercícios fazem parte de um curso introdutório, algumas boas práticas avançadas de engenharia de software foram omitidas intencionalmente, priorizando a clareza dos conceitos fundamentais.
- 
----
  
 ## 🧠 Conteúdos Abordados
  
@@ -42,7 +42,6 @@ Este repositório reúne a resolução dos exercícios desenvolvidos ao longo da
 | 🟣 Unidade 4 | Pilha, Fila e Lista (estática e dinâmica) |
 | ⚫ Unidade 5 | Algoritmos de Ordenação |
  
----
 ## 📁 Estrutura do Repositório
  
 ```
@@ -85,8 +84,6 @@ ALG_ESTRUT_DADOS_I/
     ├── UNID.05_ATV_03.c                    # Desempilhamento recursivo com soma
     └── UNID.05_ATV_04.c                    # Quick Sort em ordem decrescente
 ```
- 
----
 
 ## ⚠️ Saiba Antes de Executar
  
@@ -94,8 +91,6 @@ ALG_ESTRUT_DADOS_I/
 - Cada arquivo `.c` é independente — compile e execute individualmente
 - Alguns exercícios utilizam **alocação dinâmica de memória** (`malloc`, `calloc`, `realloc`, `free`)
 - Exercícios marcados como `(POR FAZER)` ainda estão em desenvolvimento
- 
----
  
 ## ▶️ Como Compilar e Executar
  
@@ -136,8 +131,6 @@ gcc -Wall -Wextra -o saida nome_do_arquivo.c
 gcc -o garagem "UNID.4 - PILHA, FILA E LISTA/UNID.04_ATV_v01.c"
 ./garagem
 ```
- 
----
 
 ## Enunciados
 
@@ -414,11 +407,11 @@ Para contribuir com projeto final e nos auxiliar a continuar desenvolvendo melho
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## 😄 Seja um dos contribuidores
-
-Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
-
+ 
 ## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+ 
+Este projeto está sob licença. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+ 
+<div align="center">
+  Feito com 💙 e muito <code>malloc</code>
+</div>
